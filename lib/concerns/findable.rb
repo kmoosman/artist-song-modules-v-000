@@ -1,6 +1,6 @@
 class Findable
   
-  module ClassMethods
+  module InstaneMethods
     def self.find_by_name(name)
       self.all.detect{|a| a.name == name}
     end
