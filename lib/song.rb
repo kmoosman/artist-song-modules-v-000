@@ -4,12 +4,8 @@ class Song
   attr_accessor :name
   attr_reader :artist
   
-  module ClassMethods
- 
-    def metadata
-      "This class produces objects that love to dance."
-    end
-  end
+  extend Memorable::ClassMethods
+
 
   @@songs = []
 
